@@ -1,0 +1,5 @@
+FROM maven:3.5.0-jdk-8
+ARG VERSION
+ADD ./target/testng-java-example-*.jar /tmp/testng-java-example-*.jar
+EXPOSE 8080
+CMD ["java", "-jar", "/tmp/testng-java-example-*.jar"]

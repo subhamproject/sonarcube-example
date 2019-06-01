@@ -1,0 +1,14 @@
+version: '2'
+services:
+     
+  maven-app-build:
+     user: "${USERID}:${GROUPID}"
+     image: maven:3.3
+     volumes:
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
+      - "${JENKINS_HOME}:${JENKINS_HOME}:rw"
+      - "${WORKSPACE}:${WORKSPACE}:rw"
+     environment:
+      NEXUS_USERNAME: $NEXUS_USERNAME
+      NEXUS_PASSWORD: $NEXUS_PASSWORD
