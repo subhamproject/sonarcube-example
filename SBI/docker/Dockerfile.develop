@@ -1,5 +1,5 @@
 FROM maven:3.5.0-jdk-8
 ARG VERSION
-ADD ./target/sonar-issues-report-plugin-1.4-*.jar /tmp/sonar-issues-report-plugin-1.4-*.jar
+ADD ./target/sonar-issues-report-plugin-1.4-*.jar /tmp/
 EXPOSE 8080
 CMD ["java", "-jar", "/tmp/sonar-issues-report-plugin-1.4-*.jar"]
