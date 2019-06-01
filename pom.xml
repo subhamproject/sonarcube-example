@@ -49,6 +49,7 @@
   <properties>
     <sonar.buildVersion>4.2</sonar.buildVersion>
     <maven.test.redirectTestOutputToFile>true</maven.test.redirectTestOutputToFile>
+    <sonar.java.libraries>target</sonar.java.libraries>
   </properties>
 
   <dependencies>
