@@ -8,6 +8,7 @@ pipeline {
   environment {
       NEXUS_USERNAME = credentials('NEXUS_USERNAME')
       NEXUS_PASSWORD = credentials('NEXUS_PASSWORD')
+      NEXUS_HOSTNAME = credentials('NEXUS_HOSTNAME')
       SONAR_TOKEN = credentials('SONAR_TOKEN')
       SONAR_HOSTNAME = credentials('SONAR_HOSTNAME')
    }
