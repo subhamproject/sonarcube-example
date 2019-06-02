@@ -9,6 +9,7 @@ pipeline {
       NEXUS_USERNAME = credentials('NEXUS_USERNAME')
       NEXUS_PASSWORD = credentials('NEXUS_PASSWORD')
       SONAR_TOKEN = credentials('SONAR_TOKEN')
+      SONAR_HOSTNAME = credentials('SONAR_HOSTNAME')
    }
   agent any
   stages {
